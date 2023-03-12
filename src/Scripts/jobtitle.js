@@ -15,7 +15,7 @@ const PDLJSClient = new PDLJS({
 }
 */
 
-export default function getJobTitle(input) {
+export default async function getJobTitle(input) {
   const params = {
     "field": "title",
     "text": input,
@@ -23,7 +23,7 @@ export default function getJobTitle(input) {
     "pretty": true
 }
   // Pass the parameters object to the Autocomplete API
-  PDLJSClient.autocomplete(params)
+  const data = PDLJSClient.autocomplete(params)
     .then((data) => {
       // Print the API response in JSON format
       console.log(data.data);
@@ -32,6 +32,8 @@ export default function getJobTitle(input) {
     .catch((error) => {
       console.log(error);
     });
+return data
+    
 }
 
 /*function debounce(func, delay) {
