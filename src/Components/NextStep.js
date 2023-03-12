@@ -45,6 +45,7 @@ let data = [
 ];
 
 export default function NextStep() {
+
   const list = data.map((element, index) => (
     <div className="grid1" key={index}>
       <div className="profilepic">{element.profilepic}</div>
