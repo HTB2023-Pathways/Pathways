@@ -5,7 +5,11 @@ import Input from './Components/Input';
 function App() {
   return (
     <div className="App">
-      <Input />
+      <div>Job</div>
+      <Input type="job"/>
+      <div>Company</div>
+      <Input type="company"/>
+
     </div>
   );
 }

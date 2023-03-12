@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import getJobTitle from "../Scripts/jobtitle";
+import getCompanyName from "../Scripts/companysearch";
 //import axios from 'axios';
 
 function debounce(func, delay) {
@@ -12,16 +13,18 @@ function debounce(func, delay) {
     };
   }
 
-export default function UserInput() {
+export default function UserInput(props) {
   const [input, setInput] = useState("");
   const [results, setResults] = useState();
+
+  const searchType = props.type;
 
 
   const handleInputChange = (event) => {
     console.log(event.key); // logs key input
     setInput(event.target.value);
   };
-  
+
   // const handleButtonPress = async () => {
   //   console.log('Button was pressed!');
   //   const newResults = getJobTitle(input).then((res) => {
@@ -32,10 +35,18 @@ export default function UserInput() {
 
   const handleDebouncedInputChange = debounce(() => {
     console.log("Input changed!", input);
-    getJobTitle(input).then((res) => {
-      console.log("API results:", res);
-      setResults(res);
-    });
+
+    if (searchType === "job") {
+        getJobTitle(input).then((res) => {
+            console.log("API results:", res);
+            setResults(res);
+        });
+    } else {
+        getCompanyName(input).then((res) => {
+            console.log("API results:", res);
+            setResults(res);
+        });
+    }
   }, 1000);
 
   return (
