@@ -1,10 +1,6 @@
-import { users } from "../Data/userData.js";
-
-const jobs = {};
-
-
-const logJobHistory = (users) => {
-  users.forEach((user) => {
+export const logJobHistory = (userData) => {
+  const jobs = {};
+  userData.forEach((user) => {
     // Extract jobHistory array from the current user object
     const jobHistory = user.jobHistory;
 
@@ -45,21 +41,21 @@ const logJobHistory = (users) => {
       // If there is, increment its count by 1 and add the duration to its total duration
       if (existingPath) {
         existingPath.count += 100;
-        existingPath.totalDuration += durationInYears*100;
+        existingPath.totalDuration += durationInYears * 100;
       }
       // Otherwise, add a new career path object to the careerPaths array with the current and previous job titles, a count of 1, and the duration as the total duration
       else {
         careerPaths.push({
           title: currentJobTitle,
           previousTitle: previousJobTitle,
-          count: 0,
+          count: 100,
           totalDuration: durationInYears,
         });
       }
     }
   });
 
-  // After looping through all the users and their job histories, loop through all the career paths and calculate the average duration for each path
+  // After looping through all the userData and their job histories, loop through all the career paths and calculate the average duration for each path
   for (const jobTitle in jobs) {
     const careerPaths = jobs[jobTitle].careerPaths;
     for (const path of careerPaths) {
@@ -67,7 +63,5 @@ const logJobHistory = (users) => {
     }
   }
 
-  console.log(JSON.stringify(jobs, null, 4));
+  return jobs;
 };
-
-logJobHistory(users);
