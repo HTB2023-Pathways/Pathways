@@ -1,63 +1,32 @@
 import React, { useState } from "react";
+import Card from "./Card";
+import { output } from "../Data/output";
 import "./Card.css";
+import searchJobHistory from "../Scripts/searchJobHistory";
+import { logJobHistory } from "../Scripts/JobLogging";
+import { userData } from "../Data/userData.js";
 
-let data = [
-  {
-    profilepic: (
-      <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo"></img>
-    ),
-    name: "John Doe",
-    jobtitle: "Engineer",
-    info: "Lyft",
-  },
-  {
-    profilepic: (
-      <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo"></img>
-    ),
-    name: "John Doe",
-    jobtitle: "Software Engineer",
-    info: "Amazon",
-  },
-  {
-    profilepic: (
-      <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo"></img>
-    ),
-    name: "John Doe",
-    jobtitle: "Front end",
-    info: "face",
-  },
-  {
-    profilepic: (
-      <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo"></img>
-    ),
-    name: "John Doe",
-    jobtitle: "back end",
-    info: "Tarasios",
-  },
-  {
-    profilepic: (
-      <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo"></img>
-    ),
-    name: "John Doe",
-    jobtitle: "yououo",
-    info: "book",
-  },
-];
+export default function NextStep(props) {
+  const count = props.data.count;
+  const result = searchJobHistory(props.data.title);
+  const careerPaths = logJobHistory(userData)[props.data.title].careerPaths;
+  console.log(result)
 
-export default function NextStep() {
-
-  const list = data.map((element, index) => (
+  const list = (result.length ? result.slice(0, 3).map((element, index) => (
     <div className="grid1" key={index}>
-      <div className="profilepic">{element.profilepic}</div>
+      {/* <div className="profilepic">{element.profilepic}</div> */}
       <div className="name">{element.name}</div>
-      <div className="jobtitle1">{element.jobtitle}: {element.info}</div>
+      <div className="jobtitle1">{element.title}: {element.company}</div>
     </div>
-  ));
+  )) : <div>loading...</div>)
 
   return (
     <>
-      <div>1000+ People followed this path</div>
+      <div>{count}+ People followed this path</div>
       {list}
+      <div className="profilepic"> See more</div>
+      <div> Next steps for this job</div>
+      <Card type="commonpaths" careerData={careerPaths} />
     </>
   );
 }
