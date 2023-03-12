@@ -205,75 +205,75 @@
       ]
     },
     {
-        "name": "Mansur Mirani",
-        "jobhistory": [
-          {
-            "title": "User Interface Designer",
-            "company": "Delta Controls",
-            "years": 0.2,
-            "type": "Tech"
-          },
-          {
-            "title": "Web Developer",
-            "company": "DJ's Micro-Info Inc.",
-            "years": 7.5,
-            "type": "Tech"
-          },
-          {
-            "title": "Web Designer",
-            "company": "Infomine",
-            "years": 1.5,
-            "type": "Tech"
-          },
-          {
-            "title": "Production Administrator",
-            "company": "Infomine",
-            "years": 2,
-            "type": "Tech"
-          },
-          {
-            "title": "Production Manager",
-            "company": "Infomine",
-            "years": 4.9,
-            "type": "Tech"
-          },
-          {
-            "title": "UX Manager",
-            "company": "Infomine",
-            "years": 0.9,
-            "type": "Tech"
-          },
-          {
-            "title": "Senior Consultant",
-            "company": "NuData, A MasterCard Company",
-            "years": 1.6,
-            "type": "Tech"
-          },
-          {
-            "title": "Director of Architecture and Analytics",
-            "company": "NuData, A MasterCard Company",
-            "years": 0.9,
-            "type": "Tech"
-          },
-          {
-            "title": "Director of Architecture",
-            "company": "NuData, A MasterCard Company",
-            "years": 1.6,
-            "type": "Tech"
-          },
-          {
-            "title": "Co-Owner",
-            "company": "MiraniDesigns",
-            "years": 23.5,
-            "type": "Tech"
-          },
-          {
-            "title": "Vice President, Vancouver Tech Hub",
-            "company": "MasterCard",
-            "years": 1.5,
-            "type": "Tech"
-          }
-        ]
-      }
+      "name": "Mansur Mirani",
+      "jobhistory": [
+        {
+          "title": "User Interface Designer",
+          "company": "Delta Controls",
+          "years": 0.2,
+          "type": "Tech"
+        },
+        {
+          "title": "Web Developer",
+          "company": "DJ's Micro-Info Inc.",
+          "years": 7.5,
+          "type": "Tech"
+        },
+        {
+          "title": "Web Designer",
+          "company": "Infomine",
+          "years": 1.5,
+          "type": "Tech"
+        },
+        {
+          "title": "Production Administrator",
+          "company": "Infomine",
+          "years": 2,
+          "type": "Tech"
+        },
+        {
+          "title": "Production Manager",
+          "company": "Infomine",
+          "years": 4.9,
+          "type": "Tech"
+        },
+        {
+          "title": "UX Manager",
+          "company": "Infomine",
+          "years": 0.9,
+          "type": "Tech"
+        },
+        {
+          "title": "Senior Consultant",
+          "company": "NuData, A MasterCard Company",
+          "years": 1.6,
+          "type": "Tech"
+        },
+        {
+          "title": "Director of Architecture and Analytics",
+          "company": "NuData, A MasterCard Company",
+          "years": 0.9,
+          "type": "Tech"
+        },
+        {
+          "title": "Director of Architecture",
+          "company": "NuData, A MasterCard Company",
+          "years": 1.6,
+          "type": "Tech"
+        },
+        {
+          "title": "Co-Owner",
+          "company": "MiraniDesigns",
+          "years": 23.5,
+          "type": "Tech"
+        },
+        {
+          "title": "Vice President, Vancouver Tech Hub",
+          "company": "MasterCard",
+          "years": 1.5,
+          "type": "Tech"
+        }
+      ]
+    }
   ]
 }
