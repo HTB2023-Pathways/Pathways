@@ -23,7 +23,7 @@ export default function Card(props) {
       return b.count - a.count;
     });
   }
-
+  console.log(props.careerData);
   const list = props.careerData.map((element, index) => (
     <div
       key={index}
@@ -35,8 +35,12 @@ export default function Card(props) {
       }}
       onClick={handleClick.bind(this, element)}
     >
-      <div className="jobtitle">{Object.values(element)[0]}</div>
-      <div className="info">{Object.values(element)[1]}</div>
+      <div className="jobtitle">{element.title}</div>
+      {props.type === "commonpaths" ? (
+        <div className="info">{element.count}</div>
+      ) : (
+        <div className="company">{element.company}</div>
+      )}
     </div>
   ));
 
