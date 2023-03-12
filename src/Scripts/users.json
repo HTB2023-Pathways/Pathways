@@ -1,0 +1,279 @@
+{
+  "users": [
+    {
+      "name": "Samuel Park",
+      "jobhistory": [
+        {
+          "title": "Senior Engineer",
+          "company": "Amazon",
+          "years": 2,
+          "type": "Tech"
+        },
+        {
+          "title": "Senior SRE",
+          "company": "Facebook",
+          "years": 2,
+          "type": "Tech"
+        },
+        {
+          "title": "Staff SRE",
+          "company": "Electronic Arts Inc.",
+          "years": 2,
+          "type": "Tech"
+        },
+        {
+          "title": "Principle SRE",
+          "company": "Google",
+          "years": 2,
+          "type": "Tech"
+        },
+        {
+          "title": "Distinguished Engineer",
+          "company": "Instagram",
+          "years": 2,
+          "type": "Tech"
+        }
+      ]
+    },
+    {
+      "name": "Hoda Rashedi",
+      "jobhistory": [
+        {
+          "title": "Faculty of Computing",
+          "company": "BCIT",
+          "years": 2.3,
+          "type": "Tech"
+        },
+        {
+          "title": "User Experience Consulting",
+          "company": "TOTEM",
+          "years": 2.9,
+          "type": "Tech"
+        }
+      ]
+    },
+    {
+      "name": "Maria Davis",
+      "jobhistory": [
+        {
+          "title": "Software Engineer II",
+          "company": "Mastercard",
+          "years": 0.8,
+          "type": "Tech"
+        },
+        {
+          "title": "Coding Workshop Designer and Instructor",
+          "company": "BCIT",
+          "years": 2,
+          "type": "Tech"
+        },
+        {
+          "title": "Software Engineer",
+          "company": "xneelo Ltd",
+          "years": 0.6,
+          "type": "Tech"
+        },
+        {
+          "title": "Data Analyst",
+          "company": "Ancient Nutrition",
+          "years": 0.4,
+          "type": "Tech"
+        }
+      ]
+    },
+    {
+      "name": "Airrick Dunfield",
+      "jobhistory": [
+        {
+          "title": "Instructor",
+          "company": "BCIT",
+          "years": 3,
+          "type": "Tech"
+        },
+        {
+          "title": "Web Designer and Developer",
+          "company": "Freelance",
+          "years": 13,
+          "type": "Tech"
+        },
+        {
+          "title": "Interactive Developer",
+          "company": "SplitMango Media Ltd",
+          "years": 6,
+          "type": "Tech"
+        },
+        {
+          "title": "Code Coach",
+          "company": "BCIT",
+          "years": 1,
+          "type": "Tech"
+        }
+      ]
+    },
+    {
+      "name": "Justine Fox",
+      "jobhistory": [
+        {
+          "title": "Systems Administrator",
+          "company": "InfoMine",
+          "years": 3.3,
+          "type": "Tech"
+        },
+        {
+          "title": "AWS Academy Accredited Educator",
+          "company": "BCIT Computing",
+          "years": 3.6,
+          "type": "Tech"
+        },
+        {
+          "title": "Senior Engineer, Devops Engineering",
+          "company": "NuData Operations",
+          "years": 1.1,
+          "type": "Tech"
+        },
+        {
+          "title": "Lead Engineer, Devops Engineering",
+          "company": "NuData Operations",
+          "years": 1,
+          "type": "Tech"
+        },
+        {
+          "title": "Manager, Devops Engineering",
+          "company": "NuData Operations",
+          "years": 1.3,
+          "type": "Tech"
+        },
+        {
+          "title": "Director, Software Engineering",
+          "company": "MasterCard",
+          "years": 3,
+          "type": "Tech"
+        },
+        {
+          "title": "Principal Product Manager - Technical",
+          "company": "MasterCard",
+          "years": 1.5,
+          "type": "Tech"
+        }
+      ]
+    },
+    {
+      "name": "Chris Thompson",
+      "jobhistory": [
+        {
+          "title": "Undergrad Teaching Assistant",
+          "company": "University of British Columbia",
+          "years": 0.6,
+          "type": "Tech"
+        },
+        {
+          "title": "Undergraduate Academic Assistant",
+          "company": "University of British Columbia",
+          "years": 2.3,
+          "type": "Tech"
+        },
+        {
+          "title": "CPSC 259 Lab Coordinator",
+          "company": "University of British Columbia",
+          "years": 2.8,
+          "type": "Tech"
+        },
+        {
+          "title": "Lab Assistant",
+          "company": "British Columbia Institute of Technology",
+          "years": 6.8,
+          "type": "Tech"
+        },
+        {
+          "title": "Assistant Instructor",
+          "company": "British Columbia Institute of Technology",
+          "years": 2.4,
+          "type": "Tech"
+        },
+        {
+          "title": "PTS Instructor",
+          "company": "British Columbia Institute of Technology",
+          "years": 4.8,
+          "type": "Tech"
+        },
+        {
+          "title": "Faculty",
+          "company": "British Columbia Institute of Technology",
+          "years": 5.25,
+          "type": "Tech"
+        }
+      ]
+    },
+    {
+        "name": "Mansur Mirani",
+        "jobhistory": [
+          {
+            "title": "User Interface Designer",
+            "company": "Delta Controls",
+            "years": 0.2,
+            "type": "Tech"
+          },
+          {
+            "title": "Web Developer",
+            "company": "DJ's Micro-Info Inc.",
+            "years": 7.5,
+            "type": "Tech"
+          },
+          {
+            "title": "Web Designer",
+            "company": "Infomine",
+            "years": 1.5,
+            "type": "Tech"
+          },
+          {
+            "title": "Production Administrator",
+            "company": "Infomine",
+            "years": 2,
+            "type": "Tech"
+          },
+          {
+            "title": "Production Manager",
+            "company": "Infomine",
+            "years": 4.9,
+            "type": "Tech"
+          },
+          {
+            "title": "UX Manager",
+            "company": "Infomine",
+            "years": 0.9,
+            "type": "Tech"
+          },
+          {
+            "title": "Senior Consultant",
+            "company": "NuData, A MasterCard Company",
+            "years": 1.6,
+            "type": "Tech"
+          },
+          {
+            "title": "Director of Architecture and Analytics",
+            "company": "NuData, A MasterCard Company",
+            "years": 0.9,
+            "type": "Tech"
+          },
+          {
+            "title": "Director of Architecture",
+            "company": "NuData, A MasterCard Company",
+            "years": 1.6,
+            "type": "Tech"
+          },
+          {
+            "title": "Co-Owner",
+            "company": "MiraniDesigns",
+            "years": 23.5,
+            "type": "Tech"
+          },
+          {
+            "title": "Vice President, Vancouver Tech Hub",
+            "company": "MasterCard",
+            "years": 1.5,
+            "type": "Tech"
+          }
+        ]
+      }
+  ]
+}
