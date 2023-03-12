@@ -1,0 +1,25 @@
+.grid {
+    display: grid;
+    grid-template-areas: "header" "headerbutton";
+    grid-template-columns: 1fr 1fr;              
+}
+.container {
+    border: solid 1px black;
+    text-align: left;
+    margin: 1em;
+    padding: 1em;
+}
+
+.header {
+
+    display: grid;
+    text-align: left;
+    margin: 1em;
+}
+
+.headerButton {
+    text-align: right;
+    margin: 1em;
+}
+
+

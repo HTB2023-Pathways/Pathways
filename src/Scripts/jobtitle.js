@@ -15,7 +15,7 @@ const PDLJSClient = new PDLJS({
 }
 */
 
-export default function getJobTitile(params) {
+export default function getJobTitle(params) {
   // Pass the parameters object to the Autocomplete API
   PDLJSClient.autocomplete(params)
     .then((data) => {
