@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  /* align-items: center; */
+  padding: 1em;
 }
 
 .App-logo {
@@ -13,6 +15,11 @@
   }
 }
 
+.displayName {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +29,17 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.headerButton {
+  padding-top: 0.5em;
 }
 
 .App-link {
@@ -35,4 +53,154 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  padding: 1em;
+  margin-top: 1em;
+  justify-content: space-between;
+  height: 90px;
+  border: solid 1px #C5C5C5;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.cardcontainer:hover {
+  background-color: #F1F1F1;
+}
+
+.backButton {
+  text-align: left;
+}
+
+.avatarcontainer {
+  margin-top: 3em;
+  align-self: left;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100px;
+}
+
+.past-experience {
+  margin-top: 2em;
+}
+
+.onboard-p {
+  text-align: left;
+  margin-bottom: 1em;
+
+}
+
+.header{
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.heading {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.btn {
+  margin-top: 3em;
+  width: 90%;
+}
+
+input {
+  width: 100%;
+}
+
+.trailblazers {
+  margin-top: 3em;
+}
+
+.button {
+  margin-top: 3em;
+  width: 100%;
+  border: solid 1px grey;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profilepic {
+  min-height: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.grid1 {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.see-more-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.next-steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.see-more-text {
+  cursor: pointer;
+}
+
+.nextButton {
+  position: relative;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+  height: 50px;
+  margin-top: 2em;
+  border-radius: 10px;
+  border: solid 1px rgb(184, 184, 184);
+  background-color: #e3e3e3;
+  left: 13px;
+
 }

@@ -4,21 +4,20 @@ import getCompanyName from "../Scripts/companysearch";
 //import axios from 'axios';
 
 function debounce(func, delay) {
-    let timeoutId;
-    return function (...args) {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        func.apply(this, args);
-      }, delay);
-    };
-  }
+  let timeoutId;
+  return function (...args) {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
+}
 
 export default function UserInput(props) {
   const [input, setInput] = useState("");
   const [results, setResults] = useState();
 
   const searchType = props.type;
-
 
   const handleInputChange = (event) => {
     console.log(event.key); // logs key input
@@ -37,28 +36,42 @@ export default function UserInput(props) {
     console.log("Input changed!", input);
 
     if (searchType === "job") {
-        getJobTitle(input).then((res) => {
-            console.log("API results:", res);
-            setResults(res);
-        });
+      getJobTitle(input).then((res) => {
+        console.log("API results:", res);
+        setResults(res);
+      });
     } else {
-        getCompanyName(input).then((res) => {
-            console.log("API results:", res);
-            setResults(res);
-        });
+      getCompanyName(input).then((res) => {
+        console.log("API results:", res);
+        setResults(res);
+      });
     }
   }, 1000);
 
   return (
-    <div>
-      <input type="text" value={input} placeholder="Search" onChange={(event) => {
+    <div >
+      <div className="container mx-auto px-4">
+        <label className="label">
+          <span className="label-text">What is your current?</span>
+        </label>
+        <input
+          type="text"
+          placeholder="Type here"
+          className="input input-bordered w-full max-w-xs"
+        />
+      </div>
+      <input
+        type="text"
+        value={input}
+        placeholder="Search"
+        onChange={(event) => {
           handleInputChange(event);
           handleDebouncedInputChange();
         }}
-        />
+      />
       {results && results.length && (
         <ul>
-          {results.map((result)=>(
+          {results.map((result) => (
             <li>{result.name}</li>
           ))}
         </ul>
@@ -66,5 +79,4 @@ export default function UserInput(props) {
       {/* <button onClick={handleButtonPress}>Search</button> */}
     </div>
   );
-
-  }
+}

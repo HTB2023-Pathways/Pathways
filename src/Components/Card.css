@@ -1,4 +1,4 @@
-.grid {
+/* .grid {
     display: grid;
     grid-template-areas: "header" "headerbutton";
     grid-template-columns: 1fr 1fr;              
@@ -55,4 +55,4 @@ img {
 .info {
     grid-area: info;
     text-align: left;
-}
+} */

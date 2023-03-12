@@ -27,17 +27,17 @@ export default function Card(props) {
   const list = props.careerData.map((element, index) => (
     <div
       key={index}
-      className="container"
+      className="cardcontainer"
       onMouseEnter={() => handleMouseEnter(index)}
       onMouseLeave={() => handleMouseLeave()}
-      style={{
-        border: selectedCard === index ? "5px solid grey" : "2px solid black",
-      }}
+      // style={{
+      //   border: selectedCard === index ? "5px solid grey" : "2px solid black",
+      // }}
       onClick={handleClick.bind(this, element)}
     >
       <div className="jobtitle">{element.title}</div>
       {props.type === "commonpaths" ? (
-        <div className="info">{element.count}</div>
+        <div className="info">{element.count}+ people</div>
       ) : (
         <div className="company">{element.company}</div>
       )}
@@ -46,6 +46,7 @@ export default function Card(props) {
 
   return (
     <>
+    
       {/* <div class="grid">
         <div className="header ">Most Common Paths</div>
         <div className="headerButton"> See All --</div>
