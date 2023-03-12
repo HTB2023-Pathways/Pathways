@@ -5,6 +5,7 @@ import Card from './Components/Card';
 import Trailblazer from './Components/Trailblazer';
 import Commonpaths from './Components/Commonpaths';
 import Careerpath from './Components/Careerpath';
+import NextStep from './Components/NextStep';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Input type="job"/>
       <div>Company</div>
       <Input type="company"/>
-
+      <NextStep />
     </div>
   );
 }

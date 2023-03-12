@@ -53,7 +53,7 @@ export default function Card() {
   return <>
         <div class="grid">
         <div className="header ">Most Common Paths</div>
-        <div className="headerButton"> See All --</div>
+        <div className="headerButton" > See All --</div>
         </div>  
         {list}
         </>;
