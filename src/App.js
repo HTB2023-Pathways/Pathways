@@ -4,11 +4,12 @@ import Input from './Components/Input';
 import Card from './Components/Card';
 import Trailblazer from './Components/Trailblazer';
 import Commonpaths from './Components/Commonpaths';
+import Careerpath from './Components/Careerpath';
 
 function App() {
   return (
     <div className="App">
-      {/* <Input /> */}
+      <Careerpath />
       <Commonpaths />
       <div>Job</div>
       <Input type="job"/>

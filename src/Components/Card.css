@@ -22,4 +22,6 @@
     margin: 1em;
 }
 
-
+img {
+    clip-path: circle();
+}

@@ -54,7 +54,7 @@ export default function Card() {
         <div class="grid">
         <div className="header ">Most Common Paths</div>
         <div className="headerButton"> See All --</div>
-        </div>
+        </div>  
         {list}
         </>;
 }
