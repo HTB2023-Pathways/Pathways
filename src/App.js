@@ -10,6 +10,11 @@ function App() {
     <div className="App">
       {/* <Input /> */}
       <Commonpaths />
+      <div>Job</div>
+      <Input type="job"/>
+      <div>Company</div>
+      <Input type="company"/>
+
     </div>
   );
 }
