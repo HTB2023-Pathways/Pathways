@@ -9,6 +9,7 @@ import Careerpath from "./Components/Careerpath";
 
 function App() {
   const [component, setComponent] = useState("Onboarding");
+  const [data, setData] = useState({});
 
   const components = {
     NextSteps: NextStep,
@@ -19,12 +20,15 @@ function App() {
 
   const Component = components[component];
 
-  const handleUpdateComponent = (component) => {
+  const handleUpdateComponent = (component, data) => {
+    if (data) {
+      setData(data);
+    }
     setComponent(component);
   };
   return (
     <div className="App">
-      <Component onUpdateComponent={handleUpdateComponent} />
+      <Component onUpdateComponent={handleUpdateComponent} data={data}/>
     </div>
   );
 }

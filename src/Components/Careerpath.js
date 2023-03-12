@@ -12,6 +12,12 @@ let data = [
   },
 ];
 
+const careerData = [
+  {title: "Software Engineer", company: "Acme Corporation"},
+  {title: "Junior Web Developer", company: "Delta Corporation"},
+  {title: "CST", company: "BCIT"},
+]
+
 export default function Careerpath(props) {
   // const handleClick = () => {
   //   props.onUpdateComponent("Commonpaths");
@@ -28,7 +34,7 @@ export default function Careerpath(props) {
       <div className="header">Your Career Path</div>
 
       {list}
-      <Card navTo="NextSteps" onUpdateComponent={props.onUpdateComponent} />
+      <Card careerData={careerData} navTo="Commonpaths" onUpdateComponent={props.onUpdateComponent} />
     </>
   );
 }

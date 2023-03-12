@@ -4,29 +4,6 @@ import "./Card.css";
 export default function Card(props) {
   const [selectedCard, setSelectedCard] = useState(null);
 
-  let data = [
-    {
-      jobtitle: "Engineer",
-      info: "Lyft",
-    },
-    {
-      jobtitle: "Software Engineer",
-      info: "Amazon",
-    },
-    {
-      jobtitle: "Front end",
-      info: "face",
-    },
-    {
-      jobtitle: "back end",
-      info: "Tarasios",
-    },
-    {
-      jobtitle: "yououo",
-      info: "book",
-    },
-  ];
-
   function handleMouseEnter(index) {
     setSelectedCard(index);
   }
@@ -35,11 +12,19 @@ export default function Card(props) {
     setSelectedCard(null);
   }
 
-  const handleClick = () => {
-    props.onUpdateComponent(props.navTo);
+  const handleClick = (data) => {
+    props.onUpdateComponent(props.navTo, data);
   };
 
-  const list = data.map((element, index) => (
+  const careerData = props.careerData;
+
+  if (props.type === "commonpaths") {
+    careerData.sort((a, b) => {
+      return b.count - a.count;
+    });
+  }
+  console.log(props.careerData);
+  const list = props.careerData.map((element, index) => (
     <div
       key={index}
       className="container"
@@ -48,10 +33,14 @@ export default function Card(props) {
       style={{
         border: selectedCard === index ? "5px solid grey" : "2px solid black",
       }}
-      onClick={handleClick}
+      onClick={handleClick.bind(this, element)}
     >
-      <div className="jobtitle">{element.jobtitle}</div>
-      <div className="info">{element.info}</div>
+      <div className="jobtitle">{element.title}</div>
+      {props.type === "commonpaths" ? (
+        <div className="info">{element.count}</div>
+      ) : (
+        <div className="company">{element.company}</div>
+      )}
     </div>
   ));
 
